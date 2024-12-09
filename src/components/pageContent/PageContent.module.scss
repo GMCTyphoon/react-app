@@ -1,0 +1,894 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f4;
+  height: auto;
+  & .pageContentTopSvg {
+    height: 60px;
+    margin-top: -59px;
+    width: 100%;
+  }
+  & .pageContentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .pageContentTop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1280px;
+      & .pageContentTopText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1051px;
+        & .pageContentTopTitle {
+          font-size: 45px;
+          font-weight: 700;
+          font-family: "FuturaFuturisC", sans-serif;
+          color: #111111;
+          margin-bottom: 0px;
+          margin-top: 85px;
+        }
+        & .pageContentTopSubtitle {
+          font-size: 24px;
+          font-weight: 400;
+          font-family: "FuturaBookC", sans-serif;
+          color: #030303;
+          text-align: center;
+          margin-top: 25px;
+          margin-bottom: 0px;
+        }
+      }
+      & .pageContentTopCards {
+        display: flex;
+        margin-top: 42px;
+        & .pageContentTopCardsList {
+          display: flex;
+          flex-wrap: wrap;
+          row-gap: 32px;
+          column-gap: 43px;
+          margin: 0;
+          padding: 0;
+          justify-content: center;
+          & .pageContentTopCardsItem {
+            position: relative;
+            width: 369px;
+            height: 406px;
+            background-color: #f5f5f5;
+            background-image: url("../../assets/pageContentImages/topCards/card-bg.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            box-shadow: 0px 4px 30px rgba(9, 38, 192, 0.05);
+
+            & .pageContentTopCardsItemIcon {
+              width: 157px;
+              height: 162.71px;
+              margin-top: 40px;
+            }
+            & .pageContentTopCardsItemTitle {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 20px;
+              font-weight: 700;
+              font-family: "FuturaFuturisC", sans-serif;
+              color: #2a336c;
+              margin-top: 39.29px;
+              margin-bottom: 0;
+              text-align: center;
+            }
+            & .pageContentTopCardsItemSubtitle {
+              font-size: 18px;
+              font-weight: 400;
+              font-family: "FuturaBookC", sans-serif;
+              color: #030303;
+              margin-top: 14px;
+              text-align: center;
+              max-width: 305px;
+              padding: 0 50px;
+            }
+          }
+        }
+      }
+    }
+    & .pageContentMiddleSvg {
+      height: 60px;
+      z-index: 1;
+      margin-top: 60px;
+      width: 100%;
+    }
+    & .pageContentMiddle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #0809a7;
+      background-image: url("../../assets/pageContentImages/middle-bg.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 100%;
+      margin-top: -58px;
+      z-index: 0;
+
+      & .pageContentMiddleTitle {
+        font-size: 45px;
+        font-weight: 700;
+        font-family: "FuturaFuturisC", sans-serif;
+        color: #ffffff;
+        margin-top: 163px;
+      }
+    }
+    & .pageContentMiddleList {
+      display: flex;
+      gap: 18px;
+      padding: 0;
+      margin-top: 57px;
+      & .pageContentMiddleItem {
+        width: 242px;
+        height: 174px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+      }
+      & .pageContentMiddleBtn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: 0 53px;
+        gap: 0px;
+        &:hover {
+          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.55);
+        }
+      }
+    }
+    & .pageContentMiddleSubtitle {
+      display: flex;
+      font-weight: 400;
+      font-family: "FuturaBookC", sans-serif;
+      color: #ffffff;
+      margin-top: 42px;
+      text-align: center;
+      font-size: 20px;
+      padding: 0 320px;
+      margin-bottom: 155px;
+    }
+    & .pageContentBottomSvg {
+      height: 60px;
+      margin-top: -60px;
+      width: 100%;
+      z-index: 1;
+    }
+    & .pageContentBottomContainer {
+      background-color: #f2f2f4;
+      background-image: url("../../assets/pageContentImages/bot-bg.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin-top: -2px;
+      width: 100%;
+      z-index: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & .pageContentBottomContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1280px;
+        & .pageContentBottomContentTitle {
+          font-size: 45px;
+          font-weight: 700;
+          font-family: "FuturaFuturisC", sans-serif;
+          color: #111111;
+          margin-top: 72px;
+          margin-bottom: 0;
+        }
+        & .pageContentBottomContentSubtitle {
+          font-size: 22px;
+          font-weight: 400;
+          font-family: "FuturaBookC", sans-serif;
+          color: #333333;
+          margin-top: 24px;
+          margin-bottom: 0;
+          text-align: center;
+        }
+      }
+      & .pageContentBottomCards {
+        display: flex;
+        margin-top: 46px;
+        max-width: 1280px;
+        justify-content: center;
+        & .pageContentBottomCardsList {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          row-gap: 30px;
+          column-gap: 23px;
+          margin: 0;
+          padding: 0;
+          & .pageContentBottomCard {
+            width: 439px;
+            height: 268px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+            overflow: visible;
+
+            &:nth-child(1) {
+              background: url("../../assets/pageContentImages/bottomCards/Rectangle85.png")
+                  no-repeat right 0px top 120px,
+                url("../../assets/pageContentImages/bottomCards/Vector01.png")
+                  no-repeat center;
+            }
+            &:nth-child(2) {
+              margin-left: -30px;
+              & .pageContentBottomCardContent {
+                padding-left: 30px;
+                padding-right: 160px;
+              }
+              & .pageContentBottomCardSubtitle {
+                padding-left: 85px;
+              }
+              background: url("../../assets/pageContentImages/bottomCards/Rectangle 85.svg")
+                  no-repeat right 0px top 120px,
+                url("../../assets/pageContentImages/bottomCards/Vector02.png")
+                  no-repeat center;
+            }
+            &:nth-child(3) {
+              margin-left: -34px;
+              width: 413px;
+              height: 298px;
+              background: url("../../assets/pageContentImages/bottomCards/Rectangle 85.svg")
+                  no-repeat right 0px top 120px,
+                url("../../assets/pageContentImages/bottomCards/Vector03.png")
+                  no-repeat center;
+            }
+            &:nth-child(4) {
+              margin-top: -30px;
+              width: 413px;
+              background: url("../../assets/pageContentImages/bottomCards/Rectangle 85.svg")
+                  no-repeat right 0px top 120px,
+                url("../../assets/pageContentImages/bottomCards/Vector06.png")
+                  no-repeat center;
+            }
+            &:nth-child(5) {
+              margin-top: -30px;
+              margin-left: -60px;
+              & .pageContentBottomCardContent {
+                padding-left: 60px;
+              }
+              & .pageContentBottomCardSubtitle {
+                padding-left: 115px;
+              }
+              width: 442px;
+              background: url("../../assets/pageContentImages/bottomCards/Rectangle 85.svg")
+                  no-repeat right 0px top 120px,
+                url("../../assets/pageContentImages/bottomCards/Vector05.png")
+                  no-repeat center;
+            }
+            &:nth-child(6) {
+              & .pageContentBottomCardContent {
+                padding-left: 60px;
+              }
+              & .pageContentBottomCardSubtitle {
+                padding-left: 115px;
+              }
+              margin-top: -30px;
+              margin-left: -60px;
+              width: 442px;
+              background: url("../../assets/pageContentImages/bottomCards/Rectangle 85.svg")
+                  no-repeat right 0px top 120px,
+                url("../../assets/pageContentImages/bottomCards/Vector04.png")
+                  no-repeat center;
+            }
+            & .pageContentBottomCardContent {
+              display: flex;
+              padding-top: 39px;
+              padding-left: 38px;
+              gap: 13px;
+              align-items: center;
+              & .pageContentBottomCardNumber {
+                display: flex;
+                font-size: 36px;
+                font-weight: 700;
+                font-family: "FuturaFuturisC", sans-serif;
+                color: #969af7;
+                margin: 0;
+                padding: 0;
+              }
+              & .pageContentBottomCardTitle {
+                display: flex;
+                font-size: 18px;
+                font-weight: 700;
+                font-family: "FuturaFuturisC", sans-serif;
+                color: #ffffff;
+                margin: 0;
+                padding: 0;
+              }
+            }
+            & .pageContentBottomCardSubtitle {
+              display: flex;
+              align-items: flex-start;
+              font-size: 18px;
+              font-weight: 400;
+              font-family: "FuturaBookC", sans-serif;
+              color: #e3e3e3;
+              padding-left: 90px;
+              margin-top: 16px;
+              padding-right: 40px;
+            }
+          }
+        }
+      }
+      & .pageContentBottomBtn {
+        margin-top: 48.63px;
+        margin-bottom: 154px;
+        width: 300px;
+        height: 56px;
+        border-radius: 10px;
+        background-color: #ffa500;
+        color: #ffffff;
+        font-family: "FuturaFuturisC", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        cursor: pointer;
+        border: none;
+        &:hover {
+          background-color: #ff8c00;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+  & .pageContentEndSvg {
+    height: 68px;
+    margin-top: -107px;
+    width: 100%;
+    z-index: 0;
+  }
+  & .pageContentEndContainer {
+    background: url("../../assets/pageContentImages/end-bg.png"),
+      linear-gradient(to right, #041080 0%, #0926c0 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2px;
+    & .pageContentEndContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    & .pageContentEndContentTitle {
+      margin-top: 53px;
+      margin-bottom: 0;
+      font-size: 45px;
+      font-weight: 700;
+      font-family: "FuturaFuturisC", sans-serif;
+      color: #ffffff;
+    }
+    & .pageContentEndContentList {
+      margin-top: 53px;
+      margin-bottom: 105px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      & .pageContentEndContentItem {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1280px;
+        height: fit-content;
+        border-radius: 10px;
+
+        & .pageContentEndContentItemHeader {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-image: url("../../assets/pageContentImages/endCards/Rectangle-closed.png");
+          background-repeat: no-repeat;
+          background-size: 1360px 167px;
+          background-position: center;
+          padding: 24px;
+          box-sizing: border-box;
+          width: 100%;
+          transition: all 0.3s ease;
+          & .pageContentEndContentItemTitle {
+            display: flex;
+            margin: 0;
+            margin-left: 53px;
+            padding: 0;
+            font-size: 24px;
+            font-weight: 600;
+            font-family: "FuturaDemiC", sans-serif;
+            color: #333333;
+          }
+          & .pageContentEndContentItemButton {
+            background-repeat: no-repeat;
+            background-color: #757aef;
+            display: flex;
+            margin-right: 37px;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            & .arrow {
+              width: 14px;
+              height: 7px;
+            }
+          }
+          & .pageContentEndContentItemButtonOpened {
+            background-color: #ffffff;
+          }
+        }
+        & .pageContentEndContentItemHeaderOpened {
+          background-image: url("../../assets/pageContentImages/endCards/Rectangle-opened.png");
+          border-radius: 10px;
+          & .pageContentEndContentItemTitle {
+            color: #ffffff;
+          }
+        }
+
+        & .pageContentEndContentItemContent {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-image: url("../../assets/pageContentImages/endCards/Rectangle-opened-content.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          position: relative;
+          border-radius: 10px;
+          margin-top: -10px;
+          z-index: -1;
+          box-sizing: border-box;
+          transition: all 0.3s ease;
+
+          & .pageContentEndContentItemSubtitle {
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            font-weight: 400;
+            font-family: "FuturaBookC", sans-serif;
+            color: #333333;
+            transition: all 0.3s ease;
+            & p {
+              transition: all 0.3s ease;
+              margin: 0;
+              margin-bottom: 15px;
+              padding: 0;
+            }
+          }
+        }
+        & .pageContentEndContentItemContentOpened {
+          padding: 39px;
+          padding-left: 53px;
+          padding-right: 43px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  main {
+    & .pageContentEndContainer {
+      & .pageContentEndContentList {
+        & .pageContentEndContentItem {
+          width: 80vw;
+
+          & .pageContentEndContentItemHeader {
+            border-radius: 10px;
+            & .pageContentEndContentItemButton {
+              margin: 0 10px;
+            }
+            & .pageContentEndContentItemTitle {
+              margin-left: 10px;
+              font-size: 20px;
+            }
+          }
+          & .pageContentEndContentItemContentOpened {
+            padding: 10px;
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1670px) {
+  main {
+    & .pageContentContainer {
+      & .pageContentMiddleList {
+        gap: 10px;
+        & .pageContentMiddleItem {
+          width: 200px;
+          height: 140px;
+        }
+        & .pageContentMiddleBtn {
+          margin: 0 10px;
+        }
+      }
+      & .pageContentBottomContainer {
+        & .pageContentBottomCards {
+          & .pageContentBottomCardsList {
+            grid-template-columns: repeat(2, 1fr);
+            & .pageContentBottomCard {
+              &:nth-child(1) {
+                background: url("../../assets/pageContentImages/bottomCards/Rectangle85.png")
+                    no-repeat right 0px top 120px,
+                  url("../../assets/pageContentImages/bottomCards/Vector01.png")
+                    no-repeat center;
+              }
+              &:nth-child(2) {
+                background: url("../../assets/pageContentImages/bottomCards/Rectangle 85.svg")
+                    no-repeat right 0px top 120px,
+                  url("../../assets/pageContentImages/bottomCards/Vector02.png")
+                    no-repeat center;
+              }
+              &:nth-child(3) {
+                margin-left: 0;
+                margin-top: -30px;
+                width: 439px;
+                background: url("../../assets/pageContentImages/bottomCards/Rectangle 85.svg")
+                    no-repeat right 0px top 120px,
+                  url("../../assets/pageContentImages/bottomCards/Vector02.png")
+                    no-repeat center;
+              }
+              &:nth-child(6) {
+                margin-left: -30px;
+                margin-top: -17px;
+                width: 439px;
+                background: url("../../assets/pageContentImages/bottomCards/Rectangle 85.svg")
+                    no-repeat right 0px top 120px,
+                  url("../../assets/pageContentImages/bottomCards/Vector02.png")
+                    no-repeat center;
+              }
+              &:nth-child(4) {
+                order: 2;
+                margin-left: -45px;
+                margin-top: -30px;
+                width: 439px;
+                background: url("../../assets/pageContentImages/bottomCards/Vector06.png")
+                  no-repeat center;
+                transform: rotate(180deg);
+                & .pageContentBottomCardContent {
+                  & .pageContentBottomCardNumber {
+                    transform: rotate(-180deg);
+                    position: relative;
+                    top: 160px;
+                    left: 310px;
+                  }
+                  & .pageContentBottomCardTitle {
+                    transform: rotate(-180deg);
+                    position: relative;
+                    top: 160px;
+                    left: 50px;
+                  }
+                }
+                & .pageContentBottomCardSubtitle {
+                  transform: rotate(-180deg);
+                  position: relative;
+                  left: -15px;
+                }
+              }
+              &:nth-child(5) {
+                order: 1;
+                margin-left: 0px;
+                margin-top: -30px;
+                width: 439px;
+                background: url("../../assets/pageContentImages/bottomCards/Rectangle 85.svg")
+                    no-repeat right 0px top 120px,
+                  url("../../assets/pageContentImages/bottomCards/Vector02.png")
+                    no-repeat center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  main {
+    & .pageContentContainer {
+      & .pageContentTop {
+        padding: 0 20px;
+        & .pageContentTopText {
+          & .pageContentTopTitle {
+            font-size: 35px;
+            margin-top: 65px;
+          }
+          & .pageContentTopSubtitle {
+            font-size: 20px;
+            margin-top: 20px;
+          }
+        }
+        & .pageContentTopCards {
+          & .pageContentTopCardsList {
+            justify-content: center;
+            row-gap: 25px;
+            column-gap: 35px;
+          }
+        }
+      }
+      & .pageContentMiddle {
+        & .pageContentMiddleTitle {
+          font-size: 35px;
+          margin-top: 120px;
+        }
+        & .pageContentMiddleList {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          & .pageContentMiddleBtn {
+            display: none;
+          }
+          & .pageContentMiddleItem {
+            &:last-child {
+              display: none;
+            }
+          }
+        }
+        & .pageContentMiddleSubtitle {
+          padding: 0 120px;
+          margin-top: 35px;
+          margin-bottom: 120px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 968px) {
+  main {
+    & .pageContentContainer {
+      & .pageContentBottomContainer {
+        & .pageContentBottomCards {
+          & .pageContentBottomCardsList {
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+            gap: 2px;
+            margin: 0;
+            padding: 0;
+            & .pageContentBottomCard {
+              &:nth-child(1) {
+                background: url("../../assets/pageContentImages/bottomCards/Rectangle85.png")
+                    no-repeat right 0px top 120px,
+                  url("../../assets/pageContentImages/bottomCards/Vector01.png")
+                    no-repeat center;
+              }
+              &:nth-child(2) {
+                margin: 0;
+                background: url("../../assets/pageContentImages/bottomCards/Rectangle 85.svg")
+                    no-repeat right 0px top 120px,
+                  url("../../assets/pageContentImages/bottomCards/Vector02.png")
+                    no-repeat center;
+              }
+              &:nth-child(3) {
+                margin: 0;
+                width: 439px;
+                height: 268px;
+                background: url("../../assets/pageContentImages/bottomCards/Rectangle 85.svg")
+                    no-repeat right 0px top 120px,
+                  url("../../assets/pageContentImages/bottomCards/Vector02.png")
+                    no-repeat center;
+              }
+              &:nth-child(6) {
+                margin: 0;
+                width: 439px;
+                background: url("../../assets/pageContentImages/bottomCards/Rectangle 85.svg")
+                    no-repeat right 0px top 120px,
+                  url("../../assets/pageContentImages/bottomCards/Vector02.png")
+                    no-repeat center;
+              }
+              &:nth-child(4) {
+                order: 2;
+                margin: 0;
+                width: 439px;
+                position: relative;
+                left: -15px;
+                background: url("../../assets/pageContentImages/bottomCards/Vector06.png")
+                  no-repeat center;
+                transform: rotate(180deg);
+                & .pageContentBottomCardContent {
+                  & .pageContentBottomCardNumber {
+                    transform: rotate(-180deg);
+                    position: relative;
+                    top: 160px;
+                    left: 310px;
+                  }
+                  & .pageContentBottomCardTitle {
+                    transform: rotate(-180deg);
+                    position: relative;
+                    top: 160px;
+                    left: 50px;
+                  }
+                }
+                & .pageContentBottomCardSubtitle {
+                  transform: rotate(-180deg);
+                  position: relative;
+                  left: -15px;
+                }
+              }
+              &:nth-child(5) {
+                order: 1;
+                margin: 0;
+                width: 439px;
+                background: url("../../assets/pageContentImages/bottomCards/Rectangle 85.svg")
+                    no-repeat right 0px top 120px,
+                  url("../../assets/pageContentImages/bottomCards/Vector02.png")
+                    no-repeat center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    & .pageContentContainer {
+      & .pageContentTop {
+        & .pageContentTopText {
+          & .pageContentTopTitle {
+            font-size: 28px;
+            margin-top: 45px;
+            text-align: center;
+          }
+          & .pageContentTopSubtitle {
+            font-size: 18px;
+            margin-top: 15px;
+          }
+        }
+        & .pageContentTopCards {
+          & .pageContentTopCardsList {
+            row-gap: 20px;
+            column-gap: 25px;
+            & .pageContentTopCardsItem {
+              width: 280px;
+              height: 308px;
+              & .pageContentTopCardsItemIcon {
+                width: 140px;
+                height: 145px;
+                margin-top: 5px;
+              }
+              & .pageContentTopCardsItemTitle {
+                font-size: 18px;
+                margin-top: 30px;
+              }
+              & .pageContentTopCardsItemSubtitle {
+                font-size: 16px;
+                margin-top: 12px;
+                padding: 0 30px;
+              }
+            }
+          }
+        }
+      }
+      & .pageContentMiddle {
+        & .pageContentMiddleTitle {
+          font-size: 28px;
+          margin-top: 90px;
+          text-align: center;
+        }
+        & .pageContentMiddleList {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 15px;
+          margin-top: 40px;
+          & .pageContentMiddleItem {
+            width: 220px;
+            height: 160px;
+          }
+          & .pageContentMiddleBtn {
+            margin: 0 30px;
+          }
+        }
+        & .pageContentMiddleSubtitle {
+          font-size: 18px;
+          padding: 0 40px;
+          margin-top: 30px;
+          margin-bottom: 90px;
+        }
+      }
+    }
+    & .pageContentEndContainer {
+      & .pageContentEndContentList {
+        & .pageContentEndContentItem {
+          width: 95vw;
+          & .pageContentEndContentItemContentOpened {
+            padding: 5px;
+            height: fit-content;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    & .pageContentContainer {
+      & .pageContentTop {
+        & .pageContentTopText {
+          & .pageContentTopTitle {
+            font-size: 24px;
+            margin-top: 35px;
+          }
+          & .pageContentTopSubtitle {
+            font-size: 16px;
+            margin-top: 12px;
+          }
+        }
+        & .pageContentTopCards {
+          & .pageContentTopCardsList {
+            row-gap: 15px;
+            & .pageContentTopCardsItem {
+              width: 280px;
+              height: 340px;
+              & .pageContentTopCardsItemIcon {
+                width: 120px;
+                height: 125px;
+                margin-top: 30px;
+              }
+              & .pageContentTopCardsItemTitle {
+                font-size: 16px;
+                margin-top: 25px;
+              }
+              & .pageContentTopCardsItemSubtitle {
+                font-size: 14px;
+                margin-top: 10px;
+                padding: 0 20px;
+              }
+            }
+          }
+        }
+      }
+      & .pageContentMiddle {
+        & .pageContentMiddleTitle {
+          font-size: 24px;
+          margin-top: 70px;
+        }
+        & .pageContentMiddleList {
+          gap: 12px;
+          margin-top: 30px;
+          & .pageContentMiddleItem {
+            width: 200px;
+            height: 140px;
+          }
+          & .pageContentMiddleBtn {
+            margin: 0 20px;
+          }
+        }
+        & .pageContentMiddleSubtitle {
+          font-size: 16px;
+          padding: 0 20px;
+          margin-top: 25px;
+          margin-bottom: 70px;
+        }
+      }
+    }
+  }
+}

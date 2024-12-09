@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "FuturaLightC";
+  src: url("./assets/fonts/futuralightc.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaFuturisC";
+  src: url("./assets/fonts/futurafuturisc.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("./assets/fonts/futurabookc.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}

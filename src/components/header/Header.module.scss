@@ -1,0 +1,540 @@
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #07086c;
+  background-image: url("../../assets/bgimage.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 850px;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  padding-top: 6rem;
+}
+
+.mainMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 calc((100% - 1280px) / 2);
+  transition: all 0.3s ease;
+  z-index: 100;
+
+  &.scrolled {
+    margin-top: 0rem;
+    background-color: rgba(7, 8, 108, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  & .logoImg {
+    display: flex;
+    height: 28px;
+    width: 155px;
+    justify-content: center;
+  }
+
+  & .navigation {
+    display: flex;
+  }
+
+  & .navList {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+  & .navItem {
+    display: flex;
+    list-style: none;
+    &:hover {
+      background-color: rgba(7, 8, 108, 0.95);
+      transition: 0.3s;
+    }
+  }
+  & .navLink {
+    text-decoration: none;
+    color: #fff;
+    font-family: "FuturaLightC", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    &:hover {
+      font-weight: 700;
+    }
+  }
+  & .menuIcon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 11px;
+    right: -35px;
+    position: relative;
+
+    & .menuIconBar {
+      width: 33px; /* Ширина полосок */
+      height: 2px; /* Высота полосок */
+      background-color: #d9d9d9;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+    }
+  }
+
+  & .menuIconOpen .menuIconBar:first-child {
+    transform: rotate(45deg) translate(11px, 11px);
+    align-self: center;
+  }
+
+  & .menuIconOpen .menuIconBar:nth-child(2) {
+    opacity: 0;
+    align-self: center;
+  }
+
+  & .menuIconOpen .menuIconBar:last-child {
+    transform: rotate(-45deg) translate(7px, -7px);
+    align-self: center;
+  }
+  & .contacts {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+  }
+  & .contactsText {
+    color: #fff;
+    font-family: "FuturaFuturisC", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+  }
+  & .contactsNumber {
+    font-weight: 700;
+  }
+  & .contactsImg {
+    width: 33px;
+    height: 33px;
+  }
+}
+
+.headerBottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 53px;
+  margin-top: 100px;
+  & .headerBottomItem {
+    display: flex;
+    flex-direction: column;
+  }
+  & .headerBottomItemTitle {
+    font-family: "FuturaFuturisC", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    & .headerBottomItemTitleSpan {
+      display: flex;
+      font-size: 56px;
+      color: #969af7;
+      margin-bottom: 15px;
+    }
+    & .headerBottomItemTitleSpan:last-child {
+      font-family: "FuturaFuturisC", sans-serif;
+      font-size: 61px;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+  & .headerBottomItemText {
+    font-family: "FuturaBookC", sans-serif;
+    font-size: 23px;
+    color: #969af7;
+    font-weight: 400;
+  }
+  & .headerBottomItemTextList {
+    background-image: url("../../assets/headerbottombg.png");
+    background-size: 835px 150px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 37px 31px;
+    & .headerBottomItemTextListText {
+      display: flex;
+      align-items: center;
+      font-family: "FuturaBookC", sans-serif;
+      font-size: 22px;
+      color: #ffffff;
+      font-weight: 400;
+      gap: 14px;
+      margin: 0;
+      height: 29px;
+    }
+  }
+  & .headerBottomForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+    height: fit-content;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+    & .headerBottomFormTitle {
+      width: 100%;
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      background-color: #6a32b4;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      & .headerBottomFormTitleText {
+        font-family: "FuturaFuturisC", sans-serif;
+        font-size: 23px;
+        margin: 0px;
+        padding: 0px;
+        color: #ffffff;
+        text-align: center;
+      }
+    }
+    & .headerBottomFormInputs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 25px;
+      & .headerBottomFormInput {
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+        label {
+          font-family: "FuturaBookC", sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          color: #626366;
+          position: relative;
+          right: -20px;
+        }
+        input {
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          width: 300px;
+          height: 56px;
+          border-radius: 10px;
+          margin-top: 10px;
+          &::placeholder {
+            font-family: "FuturaBookC", sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: #bcbfc4;
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+    & .headerBottomFormButtonContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & .headerBottomFormButton {
+        margin-top: 25px;
+        width: 300px;
+        height: 56px;
+        border-radius: 10px;
+        background-color: #ffa500;
+        color: #ffffff;
+        font-family: "FuturaFuturisC", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 34px;
+        cursor: pointer;
+        border: none;
+        &:hover {
+          background-color: #ff8c00;
+          transition: 0.3s;
+        }
+      }
+      & .headerBottomFormText {
+        display: flex;
+        font-family: "FuturaBookC", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 17px;
+        margin-bottom: 36px;
+        color: #c0c0c0;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  header {
+    height: 100%;
+  }
+  .mainMenu {
+    padding: 3px 30px;
+  }
+  .headerContainer {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 100px;
+    & .headerBottomItemTitle {
+      font-size: 50px;
+      & .headerBottomItemTitleSpan {
+        font-size: 40px;
+      }
+      & .headerBottomItemTitleSpan:last-child {
+        font-size: 45px;
+      }
+    }
+    & .logoImg {
+      width: 105px;
+      height: 20px;
+    }
+    & .navList {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    & .navItem {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      & .navLink {
+        font-size: 16px;
+        margin: 5px;
+      }
+    }
+
+    & .contactsText {
+      font-size: 16px;
+    }
+    & .contactsImg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    height: auto;
+  }
+
+  .mainMenu {
+    padding: 2px 20px;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-evenly;
+    & .navigation {
+      display: none;
+    }
+    & .navigationOpen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 32px;
+      background-color: rgba(7, 8, 108, 0.95);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      border: 1px solid grey;
+    }
+    & .menuIcon {
+      display: flex;
+    }
+  }
+  .headerBottom {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+    & .headerBottomItem {
+      align-items: center;
+      & .headerBottomItemText {
+        align-self: center;
+      }
+    }
+  }
+  .headerContainer {
+    width: 100%;
+    & .headerBottomItemTitle {
+      font-size: 50px;
+      & .headerBottomItemTitleSpan {
+        font-size: 40px;
+      }
+      & .headerBottomItemTitleSpan:last-child {
+        font-size: 45px;
+      }
+    }
+    & .logoImg {
+      width: 105px;
+      height: 20px;
+    }
+    & .navList {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    & .navItem {
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      & .navLink {
+        font-size: 16px;
+        margin: 0;
+        text-align: center;
+      }
+    }
+    & .contactsText {
+      font-size: 16px;
+    }
+    & .contactsImg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .mainMenu {
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    padding: 1px 10px;
+    & .navigationOpen {
+      top: 50px;
+    }
+    & .menuIcon {
+      right: -20px;
+    }
+    & .navList {
+      flex-direction: column;
+      width: 100%;
+    }
+    & .contacts {
+      flex-direction: column;
+    }
+  }
+
+  .headerBottom {
+    flex-direction: column;
+
+    & .headerBottomItemTextList {
+      padding: 20px;
+      gap: 15px;
+      & .headerBottomItemTextListText {
+        align-items: center;
+        font-size: 16px;
+        & img {
+          align-self: center;
+        }
+      }
+    }
+
+    & .headerBottomForm {
+      width: 100%;
+      max-width: 380px;
+      & .headerBottomFormTitle {
+        height: 80px;
+      }
+      & .headerBottomFormInputs {
+        & .headerBottomFormInput {
+          width: 100%;
+          align-items: center;
+          padding: 0;
+          label {
+            align-self: flex-start;
+            margin-left: 15px;
+          }
+        }
+        & .headerBottomFormButton {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .headerBottom {
+    & .headerBottomItemTitle {
+      font-size: 40px;
+      & .headerBottomItemTitleSpan {
+        font-size: 32px;
+      }
+      & .headerBottomItemTitleSpan:last-child {
+        font-size: 36px;
+      }
+    }
+    & .headerBottomItemText {
+      font-size: 18px;
+    }
+
+    & .headerBottomItemTextListText {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 358px) {
+  .mainMenu {
+    & .logoImg {
+      height: 24px;
+      width: 130px;
+    }
+    & .navLink {
+      font-size: 14px;
+    }
+    & .contactsText {
+      font-size: 14px;
+    }
+    & .contactsImg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  .headerBottom {
+    & .headerBottomItemTitle {
+      font-size: 32px;
+      & .headerBottomItemTitleSpan {
+        font-size: 26px;
+      }
+      & .headerBottomItemTitleSpan:last-child {
+        font-size: 30px;
+      }
+    }
+    & .headerBottomForm {
+      & .headerBottomFormTitleText {
+        font-size: 20px;
+      }
+      & .headerBottomFormInput {
+        padding: 0 1rem;
+        label {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
