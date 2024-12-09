@@ -4,11 +4,12 @@ import rightBtn from "../../assets/pageContentImages/middleCards/rightbtn.png";
 import { useState } from "react";
 import arrow from "../../assets/pageContentImages/endCards/arrow.png";
 import arrowOpen from "../../assets/pageContentImages/endCards/arrowOpen.png";
+import icon1 from "../../assets/pageContentImages/topCards/card-1.png";
 
 const cards = [
   {
     id: 1,
-    icon: "/src/assets/pageContentImages/topCards/card-1.png",
+    icon: icon1,
     title: "Качественная продукция",
     subtitle:
       "Все наши товары сертифицированы и имеют сопроводительную документацию.",
